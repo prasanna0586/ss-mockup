@@ -1,0 +1,30 @@
+<table id = "t01">
+  <tr>
+    <th>Actor</th>
+    <th>Primary</th>
+    <th>Algorithm</th>
+  </tr>
+  <tr>
+    <td>Customer</td>
+    <td><input type="radio" value="customer" ng-model = "actor.primary" /> Customer</td>
+    <td>
+	    <select>
+	      <option value="">Select One</option>
+		  <option value="ActorEquivalence">Actor Equivalence</option>
+		</select>
+	</td>
+  </tr>
+  <tr>
+    <td>Bidder</td>
+    <td><input type="radio" value="bidder" ng-model = "actor.primary" /> Bidder</td>
+    <td>
+	    <select>
+	      <option value="">Select One</option>
+		  <option value="ActorEquivalence">Actor Equivalence</option>
+		</select>
+	</td>
+   </tr>
+</table>
+<button type="button" class="btn btn-primary" ng-click = "gotoLoadData()">
+        Next
+</button>

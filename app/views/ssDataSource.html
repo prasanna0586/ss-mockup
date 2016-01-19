@@ -1,0 +1,30 @@
+<!-- <div class = "container">
+	<bg-splitter orientation="horizontal">
+		<bg-pane min-size="150">
+			<div class = "container">
+			<span>Select Data source<span><br/>
+			<input type="radio" name="format" ng-model="format.type" value="file" /> Data File<br>
+				<div ng-if="format.type === 'file'">
+					<input id="ss-filetype-csv" type="radio" name="filetype" ng-model="filetype.type" value="csv" /> CSV<br>
+					<input id="ss-filetype-pointillist" type="radio" name="filetype" ng-model="filetype.type" value="pointillist" ng-disabled="true" />Pointillist<br>
+				</div>
+			<input type="radio" name="format" ng-model="format.type" value="streaming" /> Stream using tags<br>
+			</div>
+		</bg-pane>
+		<bg-pane max-size="50"> Help Screen </bg-pane>
+	</bg-splitter>
+</div> -->
+
+
+<div class = "container">
+	<span>Select Data source<span><br/>
+	<input type="radio" name="format" ng-model="format.type" value="file" /> Data File<br>
+		<div ng-if="format.type === 'file'">
+			<input id="ss-filetype-csv" type="radio" name="filetype" ng-model="filetype.type" value="csv"/> CSV<br>
+			<input id="ss-filetype-pointillist" type="radio" name="filetype" ng-model="filetype.type" value="pointillist" ng-disabled="true" />Pointillist<br>
+		</div>
+		<input type="radio" name="format" ng-model="format.type" value="streaming" /> Stream using tags<br>
+	<button type="button" class="btn btn-primary" ng-click = "gotoDataCuration(format.type)">
+        Next
+    </button>
+</div>

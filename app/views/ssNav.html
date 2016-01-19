@@ -1,0 +1,22 @@
+<div>
+	<!-- the links to our nested states using relative paths -->
+	<!-- add the active class if the state matches our ui-sref -->
+	<!-- <div id="status-buttons" class="text-center">
+		<a ui-sref-active="active" ui-sref=".datasource">
+			<span>1 </span><span>Select Data Source</span>
+		</a>
+		<a ui-sref-active="active" ui-sref=".curation">
+			<span>2 </span>Data Curation<span>Data Curation</span>
+		</a>
+		<a ui-sref-active="active" ui-sref=".load">
+			<span>3 </span><span>Load Data</span>
+		</a>
+	</div> -->
+
+	<uib-tabset>
+		<uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled" ng-click = "onTabSelect(tab)">
+			{{tab.content}}
+		</uib-tab>
+	</uib-tabset>
+	<div ui-view></div>
+</div>

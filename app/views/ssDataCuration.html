@@ -1,0 +1,6 @@
+<uib-tabset>
+		<uib-tab ng-repeat="tab in dataCurationTabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled" ng-click = "onTabSelect(tab)">
+			{{tab.content}}
+		</uib-tab>
+	</uib-tabset>
+<div ui-view></div>

@@ -1,0 +1,143 @@
+#ss-filetype-csv, #ss-filetype-pointillist { 
+    margin-left: 15px;
+}
+
+.nav-tabs {
+    border-bottom: 0px none #FFFFFF !important;
+}
+
+#headerBar {
+    height: 60px;
+    background: grey;
+}
+
+#pointillistLogo {
+	padding-left:30px;
+}
+
+#dashboardIcon {
+	padding-left:100px;
+}
+
+#lable-table {
+    width:15%;
+    float: left;
+    border: 1px solid black;
+    position:relative;
+
+}
+
+#number-table {
+    width:15%;
+    float: right;
+    border: 1px solid black;
+    position:relative;
+}
+
+#flex-table {
+    width:15%;
+    border: 1px solid black;
+    position:relative;
+    margin-left: 300px;
+}
+
+table td {
+	border:1px solid black;
+}
+
+table#t01, th, td {
+	width:70%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    position:relative;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+#map-attr-btn {
+	position:absolute;
+	top:300px;
+	margin-bottom:7px;
+	margin:7px;
+	right: 200px;
+}
+
+
+.split-panes 
+{
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.split-panes > .split-handler 
+{
+  background: transparent;
+  position: absolute;
+  z-index: 999;
+}
+
+/* Horizontal */ 
+
+.split-panes.horizontal > .split-handler
+{
+  width: 4px;
+  top: 0px; 
+  left: 50%;
+  bottom: 0px;
+  cursor: ew-resize;
+}
+
+.split-panes.horizontal > .split-pane1,
+.split-panes.horizontal > .split-pane2
+{
+  position: absolute;
+  height: 100%;
+}
+
+.split-panes.horizontal > .split-pane1
+{
+  width: 50%; 
+}
+
+.split-panes.horizontal > .split-pane2
+{
+  left: 50%;
+  right: 0px;
+  border-left: 1px solid #aaa;
+}
+
+
+/* Vertical */
+
+.split-panes.vertical > .split-handler
+{
+  height: 4px;
+  top: 50%; 
+  left: 0px;
+  right: 0px;
+  cursor: ns-resize;
+}
+
+.split-panes.vertical > .split-pane1,
+.split-panes.vertical > .split-pane2
+{
+  position: absolute;
+  width: 100%;
+}
+
+.split-panes.vertical > .split-pane1
+{
+  height: 50%; 
+}
+
+.split-panes.vertical > .split-pane2
+{
+  top: 50%;
+  bottom: 0px;
+  border-top: 1px solid #aaa;
+}
